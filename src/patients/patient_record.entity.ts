@@ -53,8 +53,10 @@ class PatientRecord extends BaseEntity{
     @Column()
   public patient_type: string;
 
-    @Column()
-  public time_of_reg: string;
+    @Column({
+    type: 'timestamp',
+  })
+  time_of_reg: Date;
 
   @Column()
   public admin: string;

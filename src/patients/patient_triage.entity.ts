@@ -6,38 +6,31 @@ class PatientTriage extends BaseEntity{
   public id?: number;
 
   @Column()
-  public firstName: string;
+  public patient_id: string;
 
   @Column()
-  public lastName: string;
-
-
-  @Column()
-  public age: number;
+  public nurse_id: string;
 
   @Column()
-  public marital_status: string;
+  public blood_pressure: string;
 
   @Column()
-  public gender: string;
+  public heart_beat: number;
 
   @Column()
-  public LGA: string;
+  public sugar_level: string;
 
   @Column()
-  public state: string;
+  public height: string;
 
   @Column()
-  public home_address: string;
+  public weight: string;
 
   @Column()
-  public residence_address: string;
+  public comment: string;
 
   @Column()
-  public phone_number: string;
-
-    @Column({ unique: true })
-  public email: string;
+  public fee: number;
 
 }
  
